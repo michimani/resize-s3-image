@@ -1,2 +1,3 @@
-cp ./resize_operation.py ./dist/resize_operation.py
-cd ./dist && zip -r9 ../upload.zip ./*
+docker-compose up --build
+cp ./resize_operation.py ./deploy/dist/resize_operation.py
+cd ./deploy/dist && zip -r9 ../../upload.zip ./* -x .gitignore

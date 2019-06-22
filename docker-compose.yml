@@ -1,0 +1,7 @@
+version: '2'
+services:
+  app:
+    build: .
+    volumes:
+      - './deploy:/home/deploy'
+    command: pip3 install -r /home/deploy/requirements.txt -t /home/deploy/dist
